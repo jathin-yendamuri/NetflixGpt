@@ -1,14 +1,14 @@
-import React from 'react'
-import Header from './Header'
+import React, { useEffect } from 'react'
 import Login from './Login'
-import { createBrowserRouter } from 'react-router-dom'
+import { createBrowserRouter, useNavigate } from 'react-router-dom'
 import Browse from './Browse'
-import { RouterProvider } from 'react-router-dom'
+import { RouterProvider } from 'react-router-dom';
+
 
 const Body = () => {
 
+
   const Approute = createBrowserRouter([
-    
     {
       path: "/browse",
       element: <Browse/>
